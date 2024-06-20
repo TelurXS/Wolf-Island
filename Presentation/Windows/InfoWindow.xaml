@@ -1,0 +1,43 @@
+﻿<Window x:Class="Presentation.Windows.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation.Windows"
+        mc:Ignorable="d"
+        Title="Info" Height="450" Width="300"
+        ResizeMode="NoResize"
+        Closing="Window_Closing">
+    <Grid Background="{StaticResource BackgroundBrush}"
+          RenderOptions.BitmapScalingMode="NearestNeighbor">
+        
+        <Border Style="{StaticResource BorderPanel}">
+            <StackPanel Orientation="Vertical">
+
+                <Image x:Name="Image_Icon"
+                       Width="100"
+                       Margin="0,20,0,0"
+                       Source="/Resources/Images/Wolfs/Wolf.png">
+                </Image>
+
+                <Label x:Name="Label_Name"
+                       Foreground="{StaticResource FontBrush}"
+                       FontSize="24"
+                       FontFamily="{StaticResource FontFamily}"
+                       Margin="0,10,0,0"
+                       HorizontalAlignment="Center">Wolf</Label>
+
+                <TextBlock x:Name="TextBlock_Description"
+                           Height="200"
+                           Margin="10,10,10,0"
+                           Foreground="{StaticResource FontBrush}"
+                           FontSize="20"
+                           FontFamily="{StaticResource FontFamily}">
+                    Properties...  
+                </TextBlock>
+                
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>

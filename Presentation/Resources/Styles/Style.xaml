@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <FontFamily x:Key="FontFamily">Segoi UI</FontFamily>
+    <FontStyle x:Key="FontStyle"></FontStyle>
+
+
+    <Color x:Key="Background">#121212</Color>
+    <Color x:Key="Primary">#1f1f1f</Color>
+    <Color x:Key="Panel">#1e1e1e</Color>
+    <Color x:Key="InterfaceBackground">#2e2e2e</Color>
+    <Color x:Key="Font">#e2e2e2</Color>
+
+    <Color x:Key="GameFieldBackground">Green</Color>
+
+
+
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource Background}"></SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"></SolidColorBrush>
+    <SolidColorBrush x:Key="PanelBrush" Color="{StaticResource Panel}"></SolidColorBrush>
+    <SolidColorBrush x:Key="InterfaceBackgroundBrush" Color="{StaticResource InterfaceBackground}"></SolidColorBrush>
+    <SolidColorBrush x:Key="FontBrush" Color="{StaticResource Font}"></SolidColorBrush>
+    
+    <SolidColorBrush x:Key="GameFieldBackgroundBrush" Color="{StaticResource GameFieldBackground}"></SolidColorBrush>
+    
+
+
+    <Style x:Key="BorderPanel" TargetType="Border">
+        <Setter Property="Margin" Value="5"></Setter>
+        <Setter Property="Padding" Value="5"></Setter>
+        <Setter Property="Background" Value="{StaticResource PanelBrush}"></Setter>
+        <Setter Property="CornerRadius" Value="5"></Setter>
+    </Style>
+
+</ResourceDictionary>

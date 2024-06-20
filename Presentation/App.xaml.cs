@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Presentation.Windows;
 using System.Windows;
 
 namespace Presentation;
@@ -12,6 +13,7 @@ public partial class App : Application
     {
         Services.AddSingleton(this);
         Services.AddTransient<MainWindow>();
+        Services.AddTransient<InfoWindow>();
 
         Provider = Services.BuildServiceProvider();
     }

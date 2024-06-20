@@ -1,0 +1,76 @@
+﻿<Window x:Class="Presentation.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Background="{StaticResource BackgroundBrush}"
+          RenderOptions.BitmapScalingMode="NearestNeighbor">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Stretch="Uniform">
+            <UniformGrid x:Name="CellPresenters"
+                         Width="200" 
+                         Height="200" 
+                         Columns="20" 
+                         Rows="20" 
+                         Margin="5"
+                         Background="{StaticResource GameFieldBackgroundBrush}">
+            </UniformGrid>
+        </Viewbox>
+
+        <Border Grid.Row="0" 
+                Grid.Column="1" 
+                Style="{StaticResource BorderPanel}">
+
+            <StackPanel Orientation="Vertical">
+
+                <TextBlock x:Name="TextBlock_Logs"
+                           Height="300"
+                           Margin="10"
+                           Foreground="{StaticResource FontBrush}"
+                           FontSize="20"
+                           FontFamily="{StaticResource FontFamily}">
+                </TextBlock>
+                
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Button x:Name="Button_Back"
+                            Grid.Column="0" 
+                            Margin="2">
+                        Back
+                    </Button>
+
+                    <Button x:Name="Button_Next"
+                            Grid.Column="1" 
+                            Margin="2"
+                            Click="Button_Next_Click">
+                        Next
+                    </Button>
+                    
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" 
+                Grid.ColumnSpan="2" 
+                Style="{StaticResource BorderPanel}">
+        </Border>
+
+    </Grid>
+</Window>
