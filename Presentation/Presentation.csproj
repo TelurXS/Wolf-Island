@@ -10,17 +10,22 @@
 
   <ItemGroup>
     <None Remove="Resources\Images\Bunnies\Bunny.png" />
+    <None Remove="Resources\Images\Field.png" />
     <None Remove="Resources\Images\Grass\Grass1.png" />
     <None Remove="Resources\Images\Grass\Grass2.png" />
     <None Remove="Resources\Images\Grass\Grass3.png" />
     <None Remove="Resources\Images\Grass\Grass4.png" />
     <None Remove="Resources\Images\Grass\Grass5.png" />
     <None Remove="Resources\Images\Grass\Grass6.png" />
-    <None Remove="Resources\Images\Wolfs\Wolf.png" />
+    <None Remove="Resources\Images\Wolfs\WolfFemale.png" />
+    <None Remove="Resources\Images\Wolfs\WolfMale.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Resources\Images\Bunnies\Bunny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\Field.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Images\Grass\Grass1.png">
@@ -41,7 +46,10 @@
     <Content Include="Resources\Images\Grass\Grass6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Images\Wolfs\Wolf.png">
+    <Content Include="Resources\Images\Wolfs\WolfFemale.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\Wolfs\WolfMale.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

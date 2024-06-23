@@ -24,6 +24,11 @@ public sealed class AddNameToStringBuilderByCellVisitor : ICellVisitor
         Builder.Append("Grass");
     }
 
+    public void Visit(Wolf cell)
+    {
+        Builder.Append("Wolf");
+    }
+
     public void Visit(MaleWolf cell)
     {
         Builder.Append("Wolf (M)");

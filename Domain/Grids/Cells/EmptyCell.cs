@@ -12,4 +12,9 @@ public sealed record EmptyCell : Cell
     {
         visitor.Visit(this);
     }
+
+    public override Cell Copy()
+    {
+        return new EmptyCell(X, Y) { Seed = Seed };
+    }
 }

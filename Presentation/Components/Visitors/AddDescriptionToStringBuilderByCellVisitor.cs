@@ -26,10 +26,19 @@ public sealed class AddDescriptionToStringBuilderByCellVisitor : ICellVisitor
         Builder.AppendLine($"• Y: {cell.Y}");
     }
 
+    public void Visit(Wolf cell)
+    {
+        Builder.AppendLine($"• X: {cell.X}");
+        Builder.AppendLine($"• Y: {cell.Y}");
+        Builder.AppendLine($"• Points: {cell.Points / 10f}");
+    }
+
     public void Visit(MaleWolf cell)
     {
         Builder.AppendLine($"• X: {cell.X}");
         Builder.AppendLine($"• Y: {cell.Y}");
+        Builder.AppendLine($"• Points: {cell.Points / 10f}");
+        Builder.AppendLine($"• Cooldown: {cell.Cooldown}");
         Builder.AppendLine($"• Gender: Male");
     }
 
@@ -37,6 +46,7 @@ public sealed class AddDescriptionToStringBuilderByCellVisitor : ICellVisitor
     {
         Builder.AppendLine($"• X: {cell.X}");
         Builder.AppendLine($"• Y: {cell.Y}");
+        Builder.AppendLine($"• Points: {cell.Points / 10f}");
         Builder.AppendLine($"• Gender: Female");
     }
 

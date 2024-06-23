@@ -4,8 +4,64 @@ namespace Domain.Grids.Cells.Variants;
 
 public sealed record Bunny : Cell
 {
+    private const int JUMP_RANGE = 1;
+    private const float SPLIT_CHANCE = 0.2f;
+
     public Bunny(int x, int y) : base(x, y)
     {
+        Occupied = true;
+    }
+
+    public override void Tick(Grid grid)
+    {
+        Ticked = true;
+
+        var area = grid.AreaAround(X, Y, JUMP_RANGE);     
+        
+        if (TrySplit(area))
+            return;
+
+        if (TryJump(area))
+            return;
+    }
+
+    private bool TrySplit(GridSpan area)
+    {
+        if (Random.Shared.NextSingle() > SPLIT_CHANCE)
+            return false;
+
+        var spawnCell = area.PeekRandom();
+
+        if (spawnCell.Occupied)
+            return false;
+
+        var bunny = new Bunny(spawnCell.X, spawnCell.Y);
+        bunny.Ticked = true;
+        area.Place(bunny);
+
+        area.Grid.Logs.AppendLine($"{nameof(Bunny)} is splitted");
+
+        return true;
+    }
+
+    private bool TryJump(GridSpan area)
+    {
+        var destination = area.PeekRandom();
+
+        if (destination.Occupied)
+        {
+            area.Grid.Logs.AppendLine($"{nameof(Bunny)} is waiting");
+            return false;
+        }
+
+        area.Grid.Swap(this, destination);
+        
+        if (destination.Ticked is false)
+            destination.Tick(area.Grid);
+        
+        area.Grid.Logs.AppendLine($"{nameof(Bunny)} jumped to ({destination.X}, {destination.Y})");
+
+        return true;
     }
 
     public override void Accept(ICellVisitor visitor)
@@ -13,36 +69,8 @@ public sealed record Bunny : Cell
         visitor.Visit(this);
     }
 
-    public override void Tick(Grid grid)
+    public override Cell Copy()
     {
-        int randX = Random.Shared.Next(-1, 2);
-        int randY = Random.Shared.Next(-1, 2);
-
-        int x = X + randX;
-        int y = Y + randY;
-
-        if (X == x && Y == y)
-        {
-            Ticked = true;
-            grid.Builder.AppendLine($"{nameof(Bunny)} is waiting");
-            return;
-        }
-
-        if (grid.IsValidCoordinates(x, y))
-        {
-            var destination = grid.At(x, y);
-
-            if (destination.Occupied)
-            {
-                Ticked = true;
-                grid.Builder.AppendLine($"{nameof(Bunny)} is waiting");
-                return;
-            }
-
-            grid.Swap(this, destination);
-            Ticked = true;
-            grid.Builder.AppendLine($"{nameof(Bunny)} jumped to ({x}, {y}) ({randX}, {randY})");
-        }
-
+        return new Bunny(X, Y);
     }
 }

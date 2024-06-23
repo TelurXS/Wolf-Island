@@ -1,9 +1,8 @@
 ﻿using Domain.Contracts;
-using System.Runtime.CompilerServices;
 
 namespace Domain.Grids.Cells;
 
-public abstract record Cell : ITickable, IVisitable<ICellVisitor>
+public abstract record Cell : ITickable, IVisitable<ICellVisitor>, ICopyable<Cell>
 {
     protected Cell(int x, int y)
     {
@@ -18,12 +17,17 @@ public abstract record Cell : ITickable, IVisitable<ICellVisitor>
 
     public bool Occupied { get; set; }
     public bool Ticked { get; set; }
-    public int Seed { get; private set; }
+    public int Seed { get; set; }
 
     public virtual void Tick(Grid grid) { }
 
     public virtual void Accept(ICellVisitor visitor)
     {
         visitor.Visit(this);
+    }
+
+    public virtual Cell Copy() 
+    { 
+        throw new NotSupportedException(); 
     }
 }

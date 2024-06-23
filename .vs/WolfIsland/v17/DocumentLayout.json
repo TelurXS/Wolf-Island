@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "E:\\Projects\\C#\\WolfIsland\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|e:\\projects\\c#\\wolfisland\\domain\\grids\\cells\\variants\\bunny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|solutionrelative:domain\\grids\\cells\\variants\\bunny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|e:\\projects\\c#\\wolfisland\\domain\\grids\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|solutionrelative:domain\\grids\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|e:\\projects\\c#\\wolfisland\\presentation\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|solutionrelative:presentation\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|e:\\projects\\c#\\wolfisland\\domain\\contracts\\itickable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|solutionrelative:domain\\contracts\\itickable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|e:\\projects\\c#\\wolfisland\\domain\\grids\\cells\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|solutionrelative:domain\\grids\\cells\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|e:\\projects\\c#\\wolfisland\\domain\\grids\\cells\\variants\\malewolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CC354AA-01D9-4935-927F-5B47D2609E36}|Domain\\Domain.csproj|solutionrelative:domain\\grids\\cells\\variants\\malewolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|e:\\projects\\c#\\wolfisland\\presentation\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|solutionrelative:presentation\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|e:\\projects\\c#\\wolfisland\\presentation\\windows\\infowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|solutionrelative:presentation\\windows\\infowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|e:\\projects\\c#\\wolfisland\\presentation\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB2B713C-4080-44CC-BC41-C450B76C0253}|Presentation\\Presentation.csproj|solutionrelative:presentation\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,58 +22,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cell.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Cells\\Cell.cs",
-              "RelativeDocumentMoniker": "Domain\\Grids\\Cells\\Cell.cs",
-              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Cells\\Cell.cs",
-              "RelativeToolTip": "Domain\\Grids\\Cells\\Cell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAkAAAA",
+              "DocumentIndex": 0,
+              "Title": "MaleWolf.cs",
+              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Cells\\Variants\\MaleWolf.cs",
+              "RelativeDocumentMoniker": "Domain\\Grids\\Cells\\Variants\\MaleWolf.cs",
+              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Cells\\Variants\\MaleWolf.cs",
+              "RelativeToolTip": "Domain\\Grids\\Cells\\Variants\\MaleWolf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T21:41:44.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ITickable.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Domain\\Contracts\\ITickable.cs",
-              "RelativeDocumentMoniker": "Domain\\Contracts\\ITickable.cs",
-              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Domain\\Contracts\\ITickable.cs",
-              "RelativeToolTip": "Domain\\Contracts\\ITickable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T21:41:22.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InfoWindow.xaml",
-              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Presentation\\Windows\\InfoWindow.xaml",
-              "RelativeDocumentMoniker": "Presentation\\Windows\\InfoWindow.xaml",
-              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Presentation\\Windows\\InfoWindow.xaml",
-              "RelativeToolTip": "Presentation\\Windows\\InfoWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T21:37:16.407Z",
+              "WhenOpened": "2024-06-22T22:53:56.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Grid.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Grid.cs",
-              "RelativeDocumentMoniker": "Domain\\Grids\\Grid.cs",
-              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Grid.cs",
-              "RelativeToolTip": "Domain\\Grids\\Grid.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGsAAAA1AAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Presentation\\Windows\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\Windows\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Presentation\\Windows\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\Windows\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAG0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T21:23:38.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T22:53:06.367Z"
             },
             {
               "$type": "Document",
@@ -100,34 +58,7 @@
               "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Presentation\\Windows\\MainWindow.xaml",
               "RelativeToolTip": "Presentation\\Windows\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-20T21:27:58.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Bunny.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Cells\\Variants\\Bunny.cs",
-              "RelativeDocumentMoniker": "Domain\\Grids\\Cells\\Variants\\Bunny.cs",
-              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Domain\\Grids\\Cells\\Variants\\Bunny.cs",
-              "RelativeToolTip": "Domain\\Grids\\Cells\\Variants\\Bunny.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T21:24:08.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\WolfIsland\\Presentation\\Windows\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\Windows\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\Projects\\C#\\WolfIsland\\Presentation\\Windows\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\Windows\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAADQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T20:51:34.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T20:20:04.95Z"
             }
           ]
         }

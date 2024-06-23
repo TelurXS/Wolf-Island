@@ -1,4 +1,4 @@
-﻿namespace Presentation.Extensions;
+﻿namespace Domain.Extensions;
 
 public static class IEnumerableExtensions
 {

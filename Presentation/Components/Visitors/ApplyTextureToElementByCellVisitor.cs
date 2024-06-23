@@ -1,7 +1,7 @@
 ﻿using Domain.Contracts;
 using Domain.Grids.Cells;
 using Domain.Grids.Cells.Variants;
-using Presentation.Extensions;
+using Domain.Extensions;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -38,15 +38,21 @@ public sealed class ApplyTextureToElementByCellVisitor : ICellVisitor
         Control.Source = source;
     }
 
+    public void Visit(Wolf cell)
+    {
+        var source = new BitmapImage(new Uri("/Resources/Images/Wolfs/WolfMale.png", UriKind.Relative));
+        Control.Source = source;
+    }
+
     public void Visit(MaleWolf cell)
     {
-        var source = new BitmapImage(new Uri("/Resources/Images/Wolfs/Wolf.png", UriKind.Relative));
+        var source = new BitmapImage(new Uri("/Resources/Images/Wolfs/WolfMale.png", UriKind.Relative));
         Control.Source = source;
     }
 
     public void Visit(FemaleWolf cell)
     {
-        var source = new BitmapImage(new Uri("/Resources/Images/Wolfs/Wolf.png", UriKind.Relative));
+        var source = new BitmapImage(new Uri("/Resources/Images/Wolfs/WolfFemale.png", UriKind.Relative));
         Control.Source = source;
     }
 
